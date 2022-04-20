@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagem flexível</h1>
+    <p>Você está vendo essa imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar a melhor esperiência &#x1F609</p>
+    <picture>
+        <source media="(max-width: 800px)" srcset="https://github.com/gustavoguanabara/html-css/blob/master/desafios/modulo-01/d007/imagens/paisagem-p.png?raw=true" type="image/png">
+        <source media="(max-width: 1250px )" srcset="https://github.com/gustavoguanabara/html-css/blob/master/desafios/modulo-01/d007/imagens/paisagem-m.png?raw=true" type="image/png">
+        <img src="https://github.com/gustavoguanabara/html-css/blob/master/desafios/modulo-01/d007/imagens/paisagem-g.png?raw=true" alt="mulher no topo de uma montanha">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/happy-mistake.mp3"></audio>
+    <!-- FORMATOS DE AUDIO P/ OS NAV.= MP3, WAV, OGG-->
+    <!-- OUTRA FORMA DE FAZER O AUDIO-->
+    <audio preload="metadata">
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav"> <!--formato mais pesado-->
+        <p>Infelizmente seu navegador não consegue reproduzir audio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+
+    <h1>Reproduzindo Vídeos</h1><!--Os padrões mais utilizados/suportados são: MP4(MP4V), WEBN, OGV-->
+
+    <h2>Vídeos hospedados localmente</h2>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video src="midia/video.mp4" controls ></video>
+    <!--OU-->
+    <video>
+        <source src="midia/video.mp4" type="video/mp4">
+        <source src="midia/video.m4v" type="video/mp4">
+        <source src="midida/video.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibildiade com reprodução de videos</p>
+    </video>
+
+    <h2>Vídeos hospedados externamente</h2>
+    <p>Inserindo vídeos do youtube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

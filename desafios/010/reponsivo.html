@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 320px; /*min quebrando, menos que isso o texto para de quebrar*/
+            max-width: 800px; /*max de como o texto vai aparecer quebrado, acima disso para de quebrar*/
+            margin: auto;
+        }
+
+        img { 
+            width: 100%; /* isso deixa faz com que a imagem se altere dependendo do tamanho da tela*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando responsividade</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis tempore dolore ipsa, repellendus, distinctio sint earum exercitationem debitis dicta, vitae culpa ducimus! Est architecto recusandae vitae? Et sint quas impedit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat sint, totam dolore iusto autem sequi minima odit. Necessitatibus voluptatibus voluptas qui quaerat a temporibus ratione beatae blanditiis amet, impedit minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem amet hic voluptas cupiditate alias totam ipsum provident suscipit placeat tenetur consequuntur dignissimos quis cum modi, accusantium veritatis molestias odit eveniet.</p>
+        <picture> <!-- bloco para especificar varios elementos 'source' de uma img (o navegador decidira qual usar)-->
+            <source media="(max-width: 800px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="foto da Irina Blok">
+        </picture>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis tempore dolore ipsa, repellendus, distinctio sint earum exercitationem debitis dicta, vitae culpa ducimus! Est architecto recusandae vitae? Et sint quas impedit! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat sint, totam dolore iusto autem sequi minima odit. Necessitatibus voluptatibus voluptas qui quaerat a temporibus ratione beatae blanditiis amet, impedit minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem amet hic voluptas cupiditate alias totam ipsum provident suscipit placeat tenetur consequuntur dignissimos quis cum modi, accusantium veritatis molestias odit eveniet.</p>
+    </main>
+</body>
+</html>
