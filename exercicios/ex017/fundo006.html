@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo fixo de tela</title>
+    <style>
+        body {
+            height: 100vh;
+            /* background-image: url('imagens/wallpaper002.jpg');
+            background-color: black;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover; */
+            /* 
+            contain = faz com q o tamanho da imagem seja 100% exibida 
+            cover = cobre a tela a inteira mesmo que precise dar uma cortada na imagem
+            */
+            /* background-attachment: fixed; */
+            /* 
+            scroll= padrão, o fundo rola junto com a tela
+            fixed= a imagem fica fixa
+            */
+
+            /* 
+            SHORT HAND - BACKGROUND
+            1- color
+            2- image
+            3- position
+            4-repeat
+            5-size (esta na regra mas muitos navegadores ainda nao aceitam ent n e bom aplicar)
+            6- attachment
+            */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+        }
+        main {
+            background-color: white;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid blue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi ad debitis officia quaerat delectus veritatis eaque a hic enim molestiae nulla, amet fugiat officiis mollitia ab cumque eveniet illum recusandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, voluptatibus ratione et eos quo harum, deleniti cum aut corporis odit doloribus officia voluptate, quas ad consequatur a dolore nemo! Neque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et natus maxime vitae, ipsa odio repellendus, dignissimos quo, atque tenetur explicabo. Eaque hic vero quibusdam minima commodi, reprehenderit voluptatem perferendis.</p>
+    </main>
+</body>
+</html>
